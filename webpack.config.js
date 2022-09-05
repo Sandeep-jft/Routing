@@ -16,15 +16,19 @@ module.exports = {
     plugins:[
         new HtmlWebpackPlugin({
             template:'./public/index.html',
-            // title:'react router app',
+            title:'react router app',
             // filename:'main.html',
-            // minify:false //true in case of production
+            minify:false //true in case of production
         }),
         new MiniCssExtractPlugin()
     ],
 
     resolve:{
-        extensions:['.js','.jsx']
+        extensions:['.js','.jsx'],
+        alias:{
+            'js':path.resolve(__dirname,'src/js/'),
+            'scss':path.resolve(__dirname,'src/sass/')
+        }
     },
     module:{
         rules:[
@@ -72,7 +76,8 @@ module.exports = {
             directory:path.join(__dirname, 'dist')
         },
         compress:true,
-        port:9000,
+        port:3000,
         open:true,
+        historyApiFallback: true,
     }
 }
