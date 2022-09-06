@@ -1,0 +1,28 @@
+@import 'colors';
+
+nav{
+    background-color: $navbar-color;
+    height: 80px;
+    display:flex;
+    align-items:center;
+
+    a{
+        margin: 20px;
+        font-size: 25px;
+        text-decoration: none;
+        background-color: $navbar-color;
+
+        .active{
+            font-size: 30px;
+            font-weight: bold;
+            color: red;
+        }
+    }
+
+}
+
+.navbar{
+    font-size: 24px;
+    color:aqua;
+    background-color: black;
+}

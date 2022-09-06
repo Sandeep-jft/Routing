@@ -27,7 +27,9 @@ module.exports = {
         extensions:['.js','.jsx'],
         alias:{
             'js':path.resolve(__dirname,'src/js/'),
-            'scss':path.resolve(__dirname,'src/sass/')
+            'scss':path.resolve(__dirname,'src/sass/'),
+            "css":path.resolve(__dirname,'src/css/'),
+            "reduxStore":path.resolve(__dirname, 'src/redux/')
         }
     },
     module:{
@@ -46,7 +48,7 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                   // [style-loader](/loaders/style-loader)
-                  { loader: MiniCssExtractPlugin.loader },
+                  { loader: 'style-loader' },
                   // [css-loader](/loaders/css-loader)
                   {
                     loader: 'css-loader',

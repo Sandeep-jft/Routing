@@ -1,0 +1,35 @@
+/*!*******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/sass/navbar.scss ***!
+  \*******************************************************************************************************************************************/
+nav {
+  background-color: aqua;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  background-color: aqua;
+}
+nav a .RNbYWbb06srw_IfdORBE {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+}
+
+.V3x0EJVDxxerIM3MEx0A {
+  font-size: 24px;
+  color: aqua;
+  background-color: black;
+}
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/sass/index.scss ***!
+  \******************************************************************************************************************************************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: white;
+}

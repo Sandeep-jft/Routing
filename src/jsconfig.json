@@ -3,8 +3,9 @@
         "baseUrl": ".",
         "paths": {
             "js/*":["src/js/*"],
-            "scss/*":["src/sass/*"]
-
+            "scss/*":["src/sass/*"],
+            "css/*":["src/css/*"],
+            "reduxStore/*":["src/redux/*"]
         }
     }
 }
