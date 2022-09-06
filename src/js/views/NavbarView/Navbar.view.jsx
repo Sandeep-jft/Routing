@@ -18,6 +18,9 @@ const Navbar = () => {
         <NavLink style={activeLink} to={'/'}>Home</NavLink>
         <NavLink style={activeLink} to={'/about'} >About</NavLink>
         <NavLink style={activeLink} to={'product'} >Product</NavLink>
+        <NavLink style={activeLink} to={'users'} >Users</NavLink>
+        {/* relative links dont start with / instead it has its own route name only
+        only absolute paths have / in its prefix */}
     </nav>
     </>
   )

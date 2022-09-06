@@ -7,6 +7,9 @@ import NoRouteMatchContainer from './container/NoRouteMatchContainer/NoRouteMatc
 import ProductsContainer from './container/ProductsContainer/ProductsContainer';
 import FeaturesContainer from './container/ProductsContainer/FeaturesContainer';
 import NewestContainer from './container/ProductsContainer/NewestContainer';
+import UsersContainer from './container/UsersContainer/UsersContainer';
+import UserDetailsContainer from './container/UserDetailsContainer/UserDetailsContainer';
+import AdminContainer from './container/AdminContainer/AdminContainer';
 
 const App = () => {
   return (
@@ -17,8 +20,17 @@ const App = () => {
         <Route path='about' element={<AboutContainer />} />
         <Route path = '*' element={<NoRouteMatchContainer />} />
         <Route path='product' element={<ProductsContainer />} >
+            {/* render the features page data initially  */}
+            <Route index element={<FeaturesContainer />} /> 
             <Route path='features' element={<FeaturesContainer />} />
             <Route path='new' element={<NewestContainer />} />
+        </Route>
+        {/* <Route path='users' element={<UsersContainer />} />
+        <Route path='users/:userId' element={<UserDetailsContainer />} />
+        <Route path='users/admin' element={<AdminContainer />} /> */}
+        <Route path='users' element={<UsersContainer />} >
+            <Route path=':userId' element={<UserDetailsContainer />} />
+            <Route path='admin' element={<AdminContainer />} />
         </Route>
     </Routes>
     </>

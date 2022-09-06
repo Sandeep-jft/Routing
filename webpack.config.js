@@ -10,13 +10,14 @@ module.exports = {
         filename:'[name].js',
         path:path.resolve(__dirname,'dist'),
         clean:true,
+        publicPath: '/',
         assetModuleFilename: 'images/[hash][ext][query]'
 
     },
     plugins:[
         new HtmlWebpackPlugin({
             template:'./public/index.html',
-            title:'react router app',
+            // title:'react router app',
             // filename:'main.html',
             minify:false //true in case of production
         }),
@@ -24,7 +25,7 @@ module.exports = {
     ],
 
     resolve:{
-        extensions:['.js','.jsx'],
+        extensions:['.js','.jsx', '.css', '.scss'],
         alias:{
             'js':path.resolve(__dirname,'src/js/'),
             'scss':path.resolve(__dirname,'src/sass/'),
